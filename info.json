@@ -1,13 +1,13 @@
 {
   "name": "EarthMaps",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "title": "Earth Maps",
   "author": "hyspeed",
   "contact": "hyspeed_games@yahoo.com",
   "homepage": "https://github.com/hyspeed/EarthMaps",
   "description": "This mod creates the world based on an image of Earth.  Maps: Atlantic, Pacific, Olde World, Americas, Africa, Europe, Oceania, United States. \n The Player chooses what spawn city area.  Optionally has 'teleporters' at each city. \n Optionallay Pre-placed rocket silos.",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "dependencies": [
-    "base >= 2.0.0"
+    "base >= 2.1"
   ]
 }
