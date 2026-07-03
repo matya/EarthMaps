@@ -177,9 +177,8 @@ local function createSilo( surface, city )
   end
 
 
-  ---@type LuaSurface.create_entity_param
-  local build_params = {
-    name = Config.ROCKET_SILO,
+    local build_params = {
+    name = Config.ROCKET_SILO_ENTITY,
     force = silo_force,
     position = offset_position,
     move_stuck_players = true,
@@ -193,7 +192,7 @@ local function createSilo( surface, city )
     return --It really shouldn't fail at this point.
   end
   rocket_silo.destructible = false
-  rocket_silo.minable = false
+  -- rocket_silo.minable = nil  -- for 2.1, this is 'nil' and is set in prototype
 
   Utils.print("Created rocket silo: " .. city.name .. " " .. Utils.positionToStr(build_params.position))
 
