@@ -157,7 +157,7 @@ function Teleporter.onCityGenerated( event )
   Surface.placeTiles( event.surface, teleporter, "hazard-concrete-left" )
   local position = teleporter.position
   teleporter.destructible = false
-  teleporter.minable = false
+--  teleporter.minable = false -- for 2.1, this is 'nil' and is set in prototype
   teleporter.energy = 0
   teleporter.backer_name = city.full_name
 

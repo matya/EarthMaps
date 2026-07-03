@@ -9,6 +9,7 @@ local Config = {
   SURFACE_NAME = "Earth",
   RANDOM_CITY  = "Random City",
   ROCKET_SILO  = "rocket-silo",
+  ROCKET_SILO_ENTITY = "em_rocket_silo",
   TELEPORTER   = "em_teleporter",
 
   NONE   = "None",

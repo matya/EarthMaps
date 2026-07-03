@@ -7,6 +7,7 @@ local ENTITY_PATH = "__EarthMaps__/graphics/entities/"
 local em_teleporter = util.table.deepcopy(data.raw["lab"]["lab"])
 em_teleporter.name = "em_teleporter"
 em_teleporter.corpse = "big-remnants"
+em_teleporter.minable = nil
 em_teleporter.researching_speed = 0
 em_teleporter.inputs = {}
 em_teleporter.module_specification = nil
