@@ -12,7 +12,7 @@ local pre_place_silo
 local function disableSiloUsingEvent( event )
   local city = Utils.findSiloByUnitNumber( event.rocket_silo.unit_number )
   if city and city.rocket_silo and city.rocket_silo.entity then
-    city.rocket_silo.entity.active = false
+    city.rocket_silo.entity.disabled_by_script = true
     city.rocket_silo.entity.operable = false
   end
 end
@@ -21,7 +21,7 @@ end
 
 local function enableSilo( rocket_silo )
   if rocket_silo then
-    rocket_silo.entity.active = true
+    rocket_silo.entity.disabled_by_script = false
     rocket_silo.entity.operable = true
   end
 end
@@ -32,7 +32,7 @@ local function enableSilos()
   for index = 1,  #storage.world.city_names do
     local city = storage.world.cities[storage.world.city_names[index]]
     if city.rocket_silo and city.rocket_silo.entity then
-      city.rocket_silo.entity.active = true
+      city.rocket_silo.entity.disabled_by_script = false
       city.rocket_silo.entity.operable = true
     end
   end
